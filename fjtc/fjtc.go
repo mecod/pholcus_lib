@@ -27,10 +27,10 @@ import (
 )
 
 func init() {
-	Miyabaobei.Register()
+	Fjtc1105.Register()
 }
 
-var Miyabaobei = &Spider{
+var Fjtc1105 = &Spider{
 	Name:        "福建体彩11选5",
 	Description: "福建体彩11选5  [www.fjtc.com.cn]",
 	// Pausetime: 300,
@@ -39,7 +39,7 @@ var Miyabaobei = &Spider{
 	EnableCookie: false,
 	RuleTree: &RuleTree{
 		Root: func(ctx *Context) {
-			ctx.AddQueue(&request.Request{Url: "http://www.miyabaobei.com/", Rule: "获取版块URL"})
+			ctx.AddQueue(&request.Request{Url: "http://fjtc.com.cn/Notice-1105?NO=", Rule: "获取版块URL"})
 		},
 
 		Trunk: map[string]*Rule{
